@@ -60,6 +60,14 @@
     --animate-blob: blob 7s infinite;
     --animate-scroll: scroll 2s infinite;
     --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-float-delayed: float 6s ease-in-out 3s infinite;
+    --animate-spin-slow: spin-slow 20s linear infinite;
+    --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+    --animate-grid-scroll: grid-scroll 20s linear infinite;
+    --animate-orbit: orbit 12s linear infinite;
+    --animate-shimmer: shimmer 2s linear infinite;
+    --animate-morph: morph 8s ease-in-out infinite;
 
     @keyframes blob {
         0% { transform: translate(0px, 0px) scale(1); }
@@ -74,6 +82,56 @@
     @keyframes fade-in-up {
         0% { opacity: 0; transform: translateY(20px); }
         100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+        0%, 100% { transform: translateY(0) rotateX(0); }
+        50% { transform: translateY(-20px) rotateX(5deg); }
+    }
+    @keyframes spin-slow {
+        from { transform: rotateY(0deg); }
+        to { transform: rotateY(360deg); }
+    }
+    @keyframes pulse-glow {
+        0%, 100% { opacity: 0.4; filter: blur(40px); }
+        50% { opacity: 0.8; filter: blur(60px); }
+    }
+    @keyframes grid-scroll {
+        from { transform: perspective(500px) rotateX(60deg) translateY(0); }
+        to { transform: perspective(500px) rotateX(60deg) translateY(50px); }
+    }
+    @keyframes orbit {
+        from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+        to { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+    }
+    @keyframes shimmer {
+        0% { background-position: -200% center; }
+        100% { background-position: 200% center; }
+    }
+    @keyframes morph {
+        0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+        50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+        75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+    }
+    --animate-ball-spin: ball-spin 8s linear infinite;
+    --animate-ball-bounce: ball-bounce 3s ease-in-out infinite;
+
+    @keyframes ball-spin {
+        from { transform: rotateY(0deg) rotateX(-15deg) rotateZ(5deg); }
+        to   { transform: rotateY(360deg) rotateX(-15deg) rotateZ(5deg); }
+    }
+    @keyframes ball-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-14px); }
+    }
+    @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        15% { transform: rotate(14deg); }
+        30% { transform: rotate(-8deg); }
+        40% { transform: rotate(14deg); }
+        50% { transform: rotate(-4deg); }
+        60% { transform: rotate(10deg); }
+        70%, 100% { transform: rotate(0deg); }
     }
 }
 

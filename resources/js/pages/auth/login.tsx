@@ -1,5 +1,5 @@
 import { Head, useForm } from '@inertiajs/react';
-import { LoaderCircle, Mail, KeySquare, Zap } from 'lucide-react';
+import { LoaderCircle, Mail, KeySquare, Zap, CheckCircle2 } from 'lucide-react';
 import { FormEventHandler } from 'react';
 
 import InputError from '@/components/input-error';
@@ -38,6 +38,13 @@ export default function Login({ status, canResetPassword }: LoginProps) {
     return (
         <AuthLayout title="System Authorization" description="Enter credentials to access the system">
             <Head title="Log in" />
+
+            {status && (
+                <div className="mb-6 flex items-center gap-3 border border-lime-400/40 bg-lime-400/10 p-4 text-xs font-black uppercase tracking-widest text-lime-400 backdrop-blur-sm animate-fade-in-up">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
+                    {status}
+                </div>
+            )}
 
             <form className="flex flex-col gap-6" onSubmit={submit}>
                 <div className="grid gap-6">
@@ -91,7 +98,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                         <InputError message={errors.password} />
                     </div>
 
-                    <Label htmlFor="remember" className="flex items-center space-x-3 bg-zinc-900 border border-zinc-800 p-3 hover:border-lime-400/50 transition-colors group cursor-pointer">
+                    <Label htmlFor="remember" className="flex items-center space-x-3 bg-zinc-900/50 border border-zinc-800 p-3 hover:border-lime-400/50 transition-all group cursor-pointer hover:bg-zinc-900/80">
                         <Checkbox
                             id="remember"
                             name="remember"
@@ -122,8 +129,6 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                     </TextLink>
                 </div>
             </form>
-
-            {status && <div className="mb-4 text-center border border-lime-400 bg-lime-400/10 p-3 text-xs font-black uppercase tracking-widest text-lime-400">{status}</div>}
         </AuthLayout>
     );
 }

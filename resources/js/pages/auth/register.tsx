@@ -59,6 +59,13 @@ export default function Register() {
             <form className="flex flex-col gap-6 w-full max-w-2xl mx-auto" onSubmit={submit}>
                 <div className="grid gap-6">
 
+                    {/* Section label */}
+                    <div className="flex items-center gap-3">
+                        <div className="h-px flex-1 bg-gradient-to-r from-transparent to-zinc-800" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600">Personal Intel</span>
+                        <div className="h-px flex-1 bg-gradient-to-l from-transparent to-zinc-800" />
+                    </div>
+
                     {/* Names Row */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="grid gap-2">
@@ -126,8 +133,15 @@ export default function Register() {
                         </div>
                     </div>
 
+                    {/* Section label */}
+                    <div className="flex items-center gap-3">
+                        <div className="h-px flex-1 bg-gradient-to-r from-transparent to-zinc-800" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600">Demographics</span>
+                        <div className="h-px flex-1 bg-gradient-to-l from-transparent to-zinc-800" />
+                    </div>
+
                     {/* Demographics Row */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-zinc-900 pt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="grid gap-2">
                             <Label htmlFor="birthdate">Date of Birth</Label>
                             <div className="relative group">
@@ -154,21 +168,23 @@ export default function Register() {
                                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-lime-400/50 z-10">
                                     <Hash className="w-5 h-5" />
                                 </div>
-                                <div className="flex h-14 w-full border-2 border-zinc-900 bg-black/50 px-4 pl-12 py-2 font-bold items-center tracking-widest text-zinc-500">
-                                    {currentAge !== null ? `${currentAge}` : '--'}
+                                <div className="flex h-14 w-full border-2 border-zinc-800 bg-black/50 px-4 pl-12 py-2 font-bold items-center tracking-widest text-zinc-500 backdrop-blur-sm">
+                                    {currentAge !== null ? (
+                                        <span className="text-lime-400 drop-shadow-[0_0_8px_rgba(163,230,53,0.3)]">{currentAge}</span>
+                                    ) : '--'}
                                 </div>
                             </div>
                         </div>
 
                         <div className="grid gap-2">
                             <Label htmlFor="gender">Biological Gender</Label>
-                            <div className="flex bg-black border-2 border-zinc-900 h-14">
-                                <label className={`flex-1 flex items-center justify-center cursor-pointer transition-colors text-xs font-black uppercase tracking-widest ${data.gender === 'male' ? 'bg-lime-400 text-black shadow-[inset_0_0_10px_rgba(0,0,0,0.2)]' : 'text-zinc-500 hover:text-white'}`}>
+                            <div className="flex bg-black border-2 border-zinc-800 h-14">
+                                <label className={`flex-1 flex items-center justify-center cursor-pointer transition-all text-xs font-black uppercase tracking-widest ${data.gender === 'male' ? 'bg-lime-400 text-black shadow-[inset_0_0_10px_rgba(0,0,0,0.2)]' : 'text-zinc-500 hover:text-white hover:bg-zinc-900/50'}`}>
                                     <input type="radio" name="gender" value="male" className="hidden" tabIndex={5} checked={data.gender === 'male'} onChange={(e) => setData('gender', e.target.value)} />
                                     Male
                                 </label>
-                                <div className="w-0.5 h-full bg-zinc-900"></div>
-                                <label className={`flex-1 flex items-center justify-center cursor-pointer transition-colors text-xs font-black uppercase tracking-widest ${data.gender === 'female' ? 'bg-lime-400 text-black shadow-[inset_0_0_10px_rgba(0,0,0,0.2)]' : 'text-zinc-500 hover:text-white'}`}>
+                                <div className="w-0.5 h-full bg-zinc-800" />
+                                <label className={`flex-1 flex items-center justify-center cursor-pointer transition-all text-xs font-black uppercase tracking-widest ${data.gender === 'female' ? 'bg-lime-400 text-black shadow-[inset_0_0_10px_rgba(0,0,0,0.2)]' : 'text-zinc-500 hover:text-white hover:bg-zinc-900/50'}`}>
                                     <input type="radio" name="gender" value="female" className="hidden" tabIndex={6} checked={data.gender === 'female'} onChange={(e) => setData('gender', e.target.value)} />
                                     Female
                                 </label>
@@ -177,7 +193,14 @@ export default function Register() {
                         </div>
                     </div>
 
-                    <div className="grid gap-2 border-t border-zinc-900 pt-6">
+                    {/* Section label */}
+                    <div className="flex items-center gap-3">
+                        <div className="h-px flex-1 bg-gradient-to-r from-transparent to-zinc-800" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600">Credentials</span>
+                        <div className="h-px flex-1 bg-gradient-to-l from-transparent to-zinc-800" />
+                    </div>
+
+                    <div className="grid gap-2">
                         <Label htmlFor="email">Email</Label>
                         <div className="relative group">
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none group-focus-within:text-lime-400 text-zinc-500 transition-colors z-10">
