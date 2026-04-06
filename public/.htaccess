@@ -5,8 +5,9 @@
 
     RewriteEngine On
 
-    # Block access to dotfiles (.env, .git, .htaccess in parent, etc.)
-    RewriteRule (^\.|/\.) - [F,L]
+    # Block dotfiles requested directly via URL
+    RewriteCond %{REQUEST_URI} (\.|/)\.
+    RewriteRule ^ - [F,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -23,8 +24,8 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
-# Block sensitive files that should never be served
-<FilesMatch "^\.env|\.git|\.editorconfig|composer\.(json|lock)$|package(-lock)?\.json$|webpack\.mix\.js$|phpunit\.xml$">
+# Block sensitive files
+<FilesMatch "^\.(env|git|editorconfig)">
     <IfModule mod_authz_core.c>
         Require all denied
     </IfModule>
