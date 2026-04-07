@@ -50,21 +50,21 @@ function TestimonialCard({ testimonial, index }: { testimonial: { name: string; 
 export default function TestimonialsSection() {
     const testimonials = [
         {
-            name: 'Sarah Jenkins',
-            role: 'Cmdr, Lagao Gym',
-            content: 'Double bookings are dead. Utilization is maxed. Sportscity changed the entire game for us.',
+            name: 'James Park',
+            role: 'Facility Manager, Lagao Gym',
+            content: 'Bookings are easy. Utilization is maxed. Sportscity changed the entire game for us.',
             image: 'https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&q=80&w=150&h=150',
         },
         {
-            name: 'Marcus Chen',
-            role: 'Head, Tuna Hoops',
-            content: 'Running 32 teams used to be hell. Automated standings gave me my life back.',
+            name: 'Lebron James',
+            role: 'Captain, Tuna Hoops',
+            content: 'Running 32 teams used to be hell. Automated standings and notifications gave me my life back.',
             image: 'https://images.unsplash.com/photo-1583468982228-19f191b41fce?auto=format&fit=crop&q=80&w=150&h=150',
         },
         {
-            name: 'Elena Rodriguez',
-            role: 'Captain, Calumpang',
-            content: 'Instant game notifications. Absolute professionalism for the local street leagues.',
+            name: 'Selena Gomez',
+            role: 'Captain, Calumpang Volleyball League',
+            content: 'Instant game notifications. Absolute professionalism for the local leagues.',
             image: 'https://images.unsplash.com/photo-1606902965551-dce093cda6e7?auto=format&fit=crop&q=80&w=150&h=150',
         },
     ];
@@ -75,7 +75,7 @@ export default function TestimonialsSection() {
                 <AnimateOnScroll animation="fade-right">
                     <div className="max-w-3xl mb-20 border-l-8 border-lime-400 pl-6 lg:pl-10">
                         <h2 className="text-lime-400 font-black tracking-[0.2em] uppercase text-sm mb-4">Intel & Reports</h2>
-                        <h3 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-[0.9]">From The Frontlines</h3>
+                        <h3 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-[0.9]">From The Field</h3>
                     </div>
                 </AnimateOnScroll>
 

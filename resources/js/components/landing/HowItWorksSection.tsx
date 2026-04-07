@@ -40,20 +40,20 @@ export default function HowItWorksSection() {
     const steps = [
         {
             icon: UserPlus,
-            title: 'Enlist',
-            description: 'Create your profile. Join the ranks of facility managers and elite players in minutes.',
+            title: 'Register',
+            description: 'Create your profile. Join the ranks of facility managers and elite players.',
             step: '01',
         },
         {
             icon: Calendar,
-            title: 'Lock it In',
-            description: 'Book the hardest facilities in General Santos or construct brutal custom tournaments.',
+            title: 'Book',
+            description: 'Book the facilities in General Santos City. Make your reservation in seconds.',
             step: '02',
         },
         {
             icon: Trophy,
-            title: 'Execute',
-            description: 'Show up and destroy the competition. We handle the schedules and live results.',
+            title: 'Join a League',
+            description: 'Join a league. Compete with other teams. Win prizes and glory.',
             step: '03',
         },
     ];
@@ -65,9 +65,9 @@ export default function HowItWorksSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <AnimateOnScroll animation="fade-up" className="text-center max-w-3xl mx-auto mb-20">
                     <h2 className="text-lime-400 font-black tracking-[0.2em] uppercase text-sm mb-6 inline-flex items-center gap-2 border border-lime-400/20 px-4 py-1 bg-lime-400/10">
-                        <Zap className="w-4 h-4" fill="currentColor" /> Three Steps to Glory
+                        <Zap className="w-4 h-4" fill="currentColor" /> Three Steps to Success
                     </h2>
-                    <h3 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">Your Action Plan</h3>
+                    <h3 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">Your Journey Starts Here</h3>
                 </AnimateOnScroll>
 
                 {/* Connecting line between steps */}

@@ -24,12 +24,12 @@ export default function Footer() {
                                     SPORT<span className="text-lime-400 group-hover:text-white transition-colors">CITY</span>
                                 </span>
                                 <span className="text-[10px] text-zinc-500 tracking-[0.3em] mt-2">
-                                    General Santos Division
+                                    General Santos City
                                 </span>
                             </div>
                         </Link>
                         <p className="text-zinc-500 mb-10 leading-loose tracking-[0.2em] font-bold">
-                            The hardcore, secure platform for executing community sports and managing aggressive amateur leagues.
+                            The secure platform for executing community sports and managing amateur leagues.
                         </p>
                         <div className="flex items-center gap-4">
                             <a href="#" aria-label="Facebook" className="w-14 h-14 bg-zinc-950 border-2 border-zinc-900 flex items-center justify-center text-zinc-500 hover:text-black hover:bg-lime-400 hover:border-lime-400 transition-all duration-300 transform md:-skew-x-[10deg]">
@@ -48,20 +48,10 @@ export default function Footer() {
                     <div className="col-span-1 lg:col-span-2 lg:pl-10">
                         <h3 className="text-lime-400 mb-8 text-sm font-black tracking-[0.2em] border-l-4 border-lime-400 pl-4 py-1 bg-gradient-to-r from-lime-400/10 to-transparent">Links</h3>
                         <ul className="flex flex-col gap-5">
-                            <li><a href="#features" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Arsenals</a></li>
-                            <li><a href="#how-it-works" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Protocols</a></li>
-                            <li><a href="#testimonials" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Intel</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Live Action</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Support */}
-                    <div className="col-span-1 lg:col-span-3">
-                        <h3 className="text-lime-400 mb-8 text-sm font-black tracking-[0.2em] border-l-4 border-lime-400 pl-4 py-1 bg-gradient-to-r from-lime-400/10 to-transparent">Ops</h3>
-                        <ul className="flex flex-col gap-5">
-                            <li><a href="#" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Command HQ</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Rules of Engagement</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Security Clearance</a></li>
+                            <li><a href="#features" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Features</a></li>
+                            <li><a href="#how-it-works" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">How It Works</a></li>
+                            <li><a href="#testimonials" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Testimonials</a></li>
+                            <li><a href="#" className="text-zinc-400 hover:text-white hover:translate-x-2 transition-all block">Contact Us</a></li>
                         </ul>
                     </div>
 
@@ -71,15 +61,15 @@ export default function Footer() {
                         <ul className="flex flex-col gap-6">
                             <li className="flex items-start gap-4">
                                 <div className="p-2 border border-zinc-800 bg-zinc-900 mt-1 shrink-0"><MapPin className="w-4 h-4 text-lime-400" /></div>
-                                <span className="text-zinc-500 leading-loose">City Hall Base<br/>General Santos City, PH</span>
+                                <span className="text-zinc-500 leading-loose">General Santos City, South Cotabato, Philippines</span>
                             </li>
                             <li className="flex items-center gap-4">
                                 <div className="p-2 border border-zinc-800 bg-zinc-900 shrink-0"><Phone className="w-4 h-4 text-lime-400" /></div>
-                                <span className="text-zinc-500">+63 (83) 552-1234</span>
+                                <span className="text-zinc-500">+63 (917) 123-4567</span>
                             </li>
                             <li className="flex items-center gap-4">
                                 <div className="p-2 border border-zinc-800 bg-zinc-900 shrink-0"><Mail className="w-4 h-4 text-lime-400" /></div>
-                                <a href="mailto:ops@gensantos.gov.ph" className="text-zinc-500 hover:text-white transition-colors">ops@gensantos.gov.ph</a>
+                                <a href="mailto:support@sportscity.com" className="text-zinc-500 hover:text-white transition-colors">support@sportscity.com</a>
                             </li>
                         </ul>
                     </div>
@@ -88,9 +78,9 @@ export default function Footer() {
                 <div className="h-px w-full bg-zinc-900 mb-8"></div>
                 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-zinc-600 tracking-[0.3em] font-black uppercase">
-                    <p>&copy; {currentYear} General Santos. No Surrender.</p>
+                    <p>&copy; {currentYear} General Santos City. No Surrender.</p>
                     <div className="flex items-center gap-4 border border-zinc-800 px-4 py-2 bg-black">
-                        <span>Status: Online</span>
+                        <span>Status: Operational</span>
                         <span className="w-2 h-2 bg-lime-400 animate-pulse"></span>
                     </div>
                 </div>

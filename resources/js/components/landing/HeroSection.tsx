@@ -303,7 +303,7 @@ export default function HeroSection() {
                         style={{ transform: `translate(${mousePos.x * 5}px, ${mousePos.y * 5}px)` }}
                     >
                         <span className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
-                        Powering GenSan Sports
+                        Powering Sports in General Santos City
                     </div>
 
                     <h1
@@ -324,7 +324,7 @@ export default function HeroSection() {
                         className="text-lg md:text-xl text-zinc-400 mb-12 max-w-2xl font-bold animate-fade-in-up uppercase tracking-widest leading-relaxed"
                         style={{ animationDelay: '200ms' }}
                     >
-                        Hardcore facility booking and intense tournament management. No excuses. Just results.
+                        Facility booking and tournament management. No excuses. Just results.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mb-12 w-full sm:w-auto animate-fade-in-up" style={{ animationDelay: '300ms' }}>
@@ -333,13 +333,13 @@ export default function HeroSection() {
                             className="w-full sm:w-auto px-10 py-5 text-lg font-black text-black bg-lime-400 transform skew-x-[-10deg] hover:bg-white hover:-translate-y-2 hover:shadow-[6px_6px_0_#fff,0_0_30px_rgba(163,230,53,0.4)] shadow-[6px_6px_0_rgba(163,230,53,1)] transition-all duration-300 flex items-center justify-center group uppercase tracking-widest outline-none focus:ring-4 focus:ring-lime-400/50 relative overflow-hidden"
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                            <div className="skew-x-[10deg] flex items-center gap-3 relative z-10">Join Now</div>
+                            <div className="skew-x-[10deg] flex items-center gap-3 relative z-10">Register Now</div>
                         </a>
                         <a
                             href="#features"
                             className="w-full sm:w-auto px-10 py-5 text-lg font-black text-white bg-transparent border-2 border-zinc-700 transform skew-x-[-10deg] hover:border-lime-400 hover:text-lime-400 hover:shadow-[0_0_20px_rgba(163,230,53,0.15)] transition-all duration-300 flex items-center justify-center uppercase tracking-widest outline-none focus:ring-4 focus:ring-zinc-700/50"
                         >
-                            <div className="skew-x-[10deg] flex items-center gap-3">Explore</div>
+                            <div className="skew-x-[10deg] flex items-center gap-3">Learn More</div>
                         </a>
                     </div>
                 </div>
@@ -361,9 +361,9 @@ export default function HeroSection() {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 w-full border border-zinc-800/50 backdrop-blur-sm bg-black/30 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
                     {[
-                        { value: '12+', label: 'Active Arenas' },
-                        { value: '5K+', label: 'Hardcore Athletes' },
-                        { value: '150+', label: 'Intense Leagues' },
+                        { value: '10+', label: 'Facilities' },
+                        { value: '100+', label: 'Teams' },
+                        { value: '50+', label: 'Leagues' },
                     ].map((stat, i) => (
                         <div key={i} className={`flex flex-col items-center justify-center py-8 group cursor-default ${i < 2 ? 'sm:border-r border-b sm:border-b-0 border-zinc-800/50' : ''}`}>
                             <span className="text-4xl md:text-5xl font-black text-white group-hover:text-lime-400 transition-all duration-300 tracking-tighter mb-2 group-hover:drop-shadow-[0_0_15px_rgba(163,230,53,0.5)] group-hover:scale-110 transform">

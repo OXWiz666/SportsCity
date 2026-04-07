@@ -48,7 +48,7 @@ export default function Header() {
                                     SPORT<span className="text-lime-400 group-hover:text-white transition-colors">CITY</span>
                                 </span>
                                 <span className="text-[10px] font-bold text-zinc-500 tracking-[0.2em] mt-1">
-                                    General Santos
+                                    General Santos City
                                 </span>
                             </div>
                         </Link>
@@ -75,7 +75,7 @@ export default function Header() {
                                 href={route('dashboard')}
                                 className="font-bold text-zinc-300 hover:text-lime-400 transition-colors uppercase"
                             >
-                                Dashboard
+                                My Bookings
                             </Link>
                         ) : (
                             <>
@@ -89,7 +89,7 @@ export default function Header() {
                                     href={route('register')}
                                     className="px-6 py-3 font-black text-black bg-lime-400 transform skew-x-[-10deg] hover:bg-white hover:-translate-y-1 hover:shadow-[4px_4px_0_#fff] shadow-[4px_4px_0_rgba(163,230,53,1)] transition-all duration-200 focus:outline-none"
                                 >
-                                    <div className="skew-x-[10deg]">Join Now</div>
+                                    <div className="skew-x-[10deg]">Register Now</div>
                                 </Link>
                             </>
                         )}
@@ -132,7 +132,7 @@ export default function Header() {
                             href={route('dashboard')}
                             className="text-lime-400 hover:text-black hover:bg-lime-400 py-4 px-6 border border-lime-400/30 hover:border-lime-400 transition-all duration-300"
                         >
-                            Dashboard
+                            My Bookings
                         </Link>
                     ) : (
                         <div className="flex flex-col gap-4">
@@ -146,7 +146,7 @@ export default function Header() {
                                 href={route('register')}
                                 className="text-center py-5 font-black text-black bg-lime-400 transition-all duration-300 hover:bg-white"
                             >
-                                Join Now
+                                Register Now
                             </Link>
                         </div>
                     )}

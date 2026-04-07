@@ -23,38 +23,38 @@ export default function FeaturesSection() {
     const features = [
         {
             icon: CalendarCheck,
-            title: 'Tactical Booking',
-            description: 'Lightning-fast scheduling for Lagao Gym & Acharon. Claim your turf before others do.',
+            title: 'Bookings',
+            description: 'Lightning-fast scheduling for Lagao Gym & Acharon.',
             image: 'https://images.unsplash.com/photo-1542652694-40abf526446e?w=800&auto=format&fit=crop&q=80',
         },
         {
             icon: Trophy,
-            title: 'Brutal Tournaments',
-            description: 'Advanced league tools: ruthless knockout brackets, live standings, and dynamic drafting.',
+            title: 'Tournaments',
+            description: 'Advanced league tools: live standings, and dynamic drafting.',
             image: 'https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=800&auto=format&fit=crop&q=80',
         },
         {
             icon: Users,
-            title: 'Squad Management',
-            description: 'Assemble your team. Manage rosters, track attendance, and crush the competition.',
+            title: 'Team Management',
+            description: 'Assemble your team. Manage rosters, and crush the competition.',
             image: 'https://images.unsplash.com/photo-1509563268479-0f004cf3f58b?w=800&auto=format&fit=crop&q=80',
         },
         {
             icon: Activity,
-            title: 'Performance Tracking',
+            title: 'Statistics',
             description: 'No more guessing. Hard data, player analytics, and utilization stats to fuel your growth.',
             image: 'https://images.unsplash.com/photo-1558365849-6bb11ab2612b?w=800&auto=format&fit=crop&q=80',
         },
         {
             icon: ShieldCheck,
-            title: 'Live Intel',
-            description: 'Instant updates on delays, opponent changes, and venue weather. Stay absolutely sharp.',
+            title: 'Notifications',
+            description: 'Instant updates on delays, opponent changes, and venue weather.',
             image: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?w=800&auto=format&fit=crop&q=80',
         },
         {
             icon: CreditCard,
-            title: 'Rapid Payments',
-            description: 'Secure, hassle-free processing for fees and payouts. Keep the money moving effortlessly.',
+            title: 'Payments',
+            description: 'Secure, hassle-free processing for fees and payouts.',
             image: 'https://images.unsplash.com/photo-1518605368461-1e1e38ce8011?w=800&auto=format&fit=crop&q=80',
         },
     ];
@@ -68,7 +68,7 @@ export default function FeaturesSection() {
                     <h2 className="text-lime-400 font-black tracking-[0.2em] uppercase text-sm mb-4 inline-block bg-lime-400/10 px-4 py-1 border border-lime-400/20">The Arsenal</h2>
                     <h3 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-8 tracking-tighter uppercase leading-[0.9]">Everything you need to dominate.</h3>
                     <p className="text-zinc-400 text-lg md:text-xl font-bold tracking-widest leading-relaxed uppercase">
-                        The ultimate suite for high-intensity sports organizations in General Santos City.
+                        The ultimate suite for sports organizations in General Santos City.
                     </p>
                 </AnimateOnScroll>
 

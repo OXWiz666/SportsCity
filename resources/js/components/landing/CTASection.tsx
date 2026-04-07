@@ -23,15 +23,15 @@ export default function CTASection() {
                                     Take <br /><span className="text-lime-400 drop-shadow-[0_0_30px_rgba(163,230,53,0.5)]">Control.</span>
                                 </h2>
                                 <p className="text-lg text-zinc-400 font-black uppercase tracking-widest leading-relaxed mb-10 max-w-xl">
-                                    Join GenSan's ultimate sports platform. No compromises. Total domination of your schedule.
+                                    Join General Santos City's ultimate sports platform. No compromises. Total domination of your schedule.
                                 </p>
 
                                 <div className="flex flex-wrap items-center gap-4 text-xs font-black text-zinc-500 uppercase tracking-widest">
                                     <span className="flex items-center gap-2 border border-zinc-800 px-4 py-2 hover:border-lime-400 hover:text-lime-400 transition-all duration-300 hover:shadow-[0_0_15px_rgba(163,230,53,0.2)]">
-                                        <ShieldAlert className="w-5 h-5 text-lime-400" /> Free For Residents
+                                        <ShieldAlert className="w-5 h-5 text-lime-400" /> Free For All
                                     </span>
                                     <span className="flex items-center gap-2 border border-zinc-800 px-4 py-2 hover:border-lime-400 hover:text-lime-400 transition-all duration-300 hover:shadow-[0_0_15px_rgba(163,230,53,0.2)]">
-                                        <Zap className="w-5 h-5 text-lime-400" /> Instant Access
+                                        <Zap className="w-5 h-5 text-lime-400" /> Accessible Anywhere
                                     </span>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ export default function CTASection() {
                                     </div>
                                 </a>
                                 <button className="w-full px-8 py-5 text-sm font-black text-white border-4 border-zinc-800 transform skew-x-[-10deg] hover:border-lime-400 hover:text-lime-400 hover:shadow-[0_0_20px_rgba(163,230,53,0.15)] transition-all duration-300 uppercase tracking-[0.2em] outline-none">
-                                    <div className="skew-x-[10deg]">Contact Command</div>
+                                    <div className="skew-x-[10deg]">Contact Us</div>
                                 </button>
                             </div>
                         </div>
